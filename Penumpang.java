@@ -20,4 +20,6 @@ public class Penumpang {
     void pembayaran(){
         this.ojek.bayar();
     }
+
+    void cetakStruk() {this.ojek.cetak();}
 }

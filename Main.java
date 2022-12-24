@@ -37,6 +37,7 @@ public class Main {
             } else if (aksi.equalsIgnoreCase("0")){
                 System.out.println("Selamat Anda Telah menggunakan layanan Gojek");
                 System.out.println("Terimakasih");
+                user.cetakStruk();
                 System.exit(0);
             } else {
                 System.out.println("Kamu memilih aksi yang salah!");

@@ -18,6 +18,7 @@ public class Food extends Layanan{
 
     @Override
     void pilihLayanan() {
+        Layanan.layanan="Ngofood";
         System.out.println("Pilih Yang Mana Anda Suka ");
         Scanner input = new Scanner(System.in);
         System.out.print("Masukkan pilihan : ");
@@ -26,25 +27,29 @@ public class Food extends Layanan{
             case 1 :
                 System.out.println("Anda memilih Makanan Berat");
                 System.out.print("Pengumudi : Asep");
-                jenis = "Nasi cumi sambal bawang rica-rica";
+                Layanan.pengemudi = "Asep";
+                Layanan.jenis = "Nasi cumi sambal bawang rica-rica";
                 Layanan.harga = 17000;
                 break;
             case 2 :
                 System.out.println("Anda memilih Makanan Ringan");
                 System.out.print("Pengumudi : Budi");
-                jenis = "Cimol dan Kentang";
+                Layanan.pengemudi = "Rudi";
+                Layanan.jenis = "Cimol dan Kentang";
                 Layanan.harga = 10000;
                 break;
             case 3 :
                 System.out.println("Anda memilih Makanan Cepat Saji");
                 System.out.print("Pengemudi : Tono");
-                jenis = "Burger Bangor";
+                Layanan.pengemudi = "Tono";
+                Layanan.jenis = "Burger Bangor";
                 Layanan.harga = 45000;
                 break;
             case 4 :
                 System.out.println("Anda memilih Minuman");
                 System.out.print("Pengemudi : Joko");
-                jenis = "Susu Sarjana";
+                Layanan.pengemudi = "Joko";
+                Layanan.jenis = "Susu Sarjana";
                 Layanan.harga = 10000;
                 break;
         }

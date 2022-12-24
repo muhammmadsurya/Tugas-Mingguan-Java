@@ -3,4 +3,5 @@ public interface Ngojek {
     void pilih();
     void pemesanan();
     void bayar();
+    void cetak();
 }

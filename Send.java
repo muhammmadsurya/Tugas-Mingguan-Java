@@ -19,6 +19,7 @@ public class Send extends Layanan{
 
     @Override
     void pilihLayanan() {
+        Layanan.layanan="Ngosend";
         System.out.println("Pilih keinginan anda ");
         Scanner input = new Scanner(System.in);
         System.out.print("Masukkan pilihan : ");
@@ -27,31 +28,36 @@ public class Send extends Layanan{
             case 1 :
                 System.out.println("Barang yang akan Anda kirimkan Kurang 1Kg");
                 System.out.print("Pengumudi : Asep");
+                pengemudi = "Asep";
                 jenis = "Barang < 1Kg";
                 Layanan.harga = 8000;
                 break;
             case 2 :
                 System.out.println("Barang yang akan Anda kirimkan 1Kg");
                 System.out.print("Pengumudi : Budi");
-                jenis = "Barang 1kg";
+                Layanan.pengemudi = "Budi";
+                Layanan.jenis = "Barang 1kg";
                 Layanan.harga = 10000;
                 break;
             case 3 :
                 System.out.println("Barang yang akan Anda kirimkan 2kg");
                 System.out.print("Pengemudi : Tono");
-                jenis = "Barang 2kg";
+                Layanan.pengemudi = "Tono";
+                Layanan.jenis = "Barang 2kg";
                 Layanan.harga = 15000;
                 break;
             case 4 :
                 System.out.println("Barang yang akan Anda kirimkan 3kg");
                 System.out.print("Pengemudi : Joko");
-                jenis = "Barang 3kg";
+                Layanan.pengemudi = "Joko";
+                Layanan.jenis = "Barang 3kg";
                 Layanan.harga = 20000;
                 break;
             case 5 :
                 System.out.println("Barang yang akan Anda kirimkan > 3");
                 System.out.print("Pengemudi : Hisbullah");
-                jenis = "Barang > 3kg";
+                Layanan.pengemudi = "Hisbullah";
+                Layanan.jenis = "Barang > 3kg";
                 Layanan.harga = 30000;
                 break;
         }
